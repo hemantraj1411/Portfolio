@@ -1,0 +1,23 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Light mode */
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+/* Dark mode (via class, not media) */
+html.dark {
+  --background: #11001f;
+  --foreground: #ededed;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  transition: background-color 0.3s, color 0.3s;
+  font-family: 'Outfit', sans-serif;
+}
